@@ -1,0 +1,33 @@
+.head01{
+    text-align: center;
+
+}
+
+.head01 span{
+    background-color: transparent;
+    border: black;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: center;
+    padding: 100px 100px 10px 30px;
+}
+body{
+}
+
+body::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image:url("https://source.unsplash.com/1400x300/?food");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,145 @@
+:root {
+    --maincolor: white;
+    --darkBlack: black;
+    --darkGrey: grey;
+    --grey: #d5d5d5;
+    --lightGrey: #f2f2f2;
+    --yellow: yellow;
+    --red: red;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "noto Sans JP", sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    height: auto;
+    color: var(--darkBlack);
+  }
+  p {
+    font-size: fixed;
+  }
+  .label-cart {
+    position: fixed;
+    top: 15;
+    right: 10;
+    z-index: 4;
+    cursor: pointer;
+  }
+  .logo {
+    position: inherit;
+    background-color: var(--darkBlack);
+    color: var(--lightGrey);
+    width: 100%;
+    text-align: center;
+    padding: 15px 420px 15px 60px;
+    top: 0;
+    z-index: 2;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background-color: var(--maincolor);
+    z-index: 1;
+    padding-top: 70px;
+  }
+  .sidebar-menu {
+    width: 100%;
+    text-align: center;
+    padding: 10px 5px;
+    color: var(--darkGrey);
+  }
+  .sidebar-menu > a {
+    text-decoration: none;
+    font-size: 0.7rem;
+    line-height: 1.5;
+    color: var(--darkGrey);
+  }
+  .sidebar-menu:hover {
+    border-right: 2px solid var(--yellow);
+    color: var(--yellow);
+  }
+  /* .sidebar-menu:hover > a {
+    color: var(--yellow);
+  } */
+  .dashboard-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    padding: 20px;
+    margin: 5rem;
+  }
+  .dashboard-card {
+    background-color: var(--maincolor);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+  }
+  .dashboard-card img {
+    height: 16rem;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    max-width: 20.8em;
+    object-fit: cover;
+    transition: transform 1.5s;
+  }
+  .dashboard-card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .dashboard-card:hover {
+    box-shadow: black 0px 5px 15px;
+  }
+  .card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .card-detail {
+    padding: 42px;
+  }
+  .card-detail > h2 > span {
+    float: right;
+  }
+  .card-time {
+    color: var(--darkGrey);
+    font-size: 0.8rem;
+    padding-top: 10px;
+  }
+  .dashboard-order {
+    width: 340px;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0.5rem 1.5rem;
+    background-color: gray;
+    z-index: 3;
+  }
+  .container2 {
+    margin-top: 0%;
+    margin-left: 5px;
+    margin-bottom: 0%;
+    width: 1450px;
+    height: 400px;
+  }
+  .slides {
+    max-width: 1450px;
+    max-height: 400px;
+  }
+  .slides img {
+    width: 1108px;
+    height: 408px;
+    padding-left:6rem;
+    padding-top:1rem;
+  }
+  

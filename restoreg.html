@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <link rel="stylesheet" href="restoreg020.css">
+      </head>
+
+<body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">repEat</a><p>Business Purpose</p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h2 class="offcanvas-title" id="offcanvasNavbarLabel">repEat</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Pro</a></li>
+                                <li><a class="dropdown-item" href="#">Advertise</a></li>
+                                <li>
+                                    <!--  <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+                            </ul>
+                        </li>
+                    </ul>
+                    <div title="Create account" class="sc-bAeIUo jGzgQG sc-eLExRp gmukTD">
+                        <div tabindex="0" role="button" aria-expanded="false" aria-label="Create account"
+                            title="Create account" class="sc-cQFLBn ehoUiu sc-eLExRp gmukTD">
+                            <section class="sc-daURTG hudxSF">
+                                <div class="sc-gojNiO hPxILD">Create account</div>
+                            </section><i class="rbbb40-1 MxLSp sc-iujRgT dUbKdt" color="#B5B5B5" tabindex="-1"
+                                aria-hidden="true" size="20"><img xmlns="http://www.w3.org/2000/svg" fill="#B5B5B5"
+                                    width="20" height="20" viewBox="0 0 20 20"
+                                    aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="rbbb40-0 kIxlGM">
+                                <linearGradient id="clc98i4t4002i356c3fnsp1w5" x1="0" x2="100%" y1="0" y2="0">
+                                    <stop offset="0" stop-color="#B5B5B5"></stop>
+                                    <stop offset="100%" stop-color="#B5B5B5"></stop>
+                                </linearGradient>
+                                <title id="icon-svg-title-"></title>
+                                <desc id="icon-svg-desc-">It is an icon with title </desc>
+                                <title>chevron-down</title>
+                                <path
+                                    d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"
+                                    fill="url(#clc98i4t4002i356c3fnsp1w5)"></path>
+                                </img>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div height="400px" width="100%" class="s1isp7-0 fAEvcR sc-jXQZqI ihibkK">
+        <div src="" class="s1isp7-2 dBjfsr"></div>
+        <figure class="figure">
+        <img height="555px" width="1540px" alt="web-backdrop" src="https://source.unsplash.com/1400x300/?food" class="img-">
+        <figcaption class="figure-caption text-center"><h3>Register your restaurant on repEat</h3>
+            <p>and get more customers!</p></figcaption>
+    </figure>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="button"><a href="/restoreg02.html">Register your restaurant</a></button>
+        <button class="btn btn-secondary" data-bs-toggle= "modal" data-bs-target="#LoginModal" type="button">Restaurant already listed? login now</button>
+    </div>
+      <br>
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Get started with online ordering</h5>
+          <p class="card-text">Please keep the documents ready for a smooth signup</p>
+        </div>
+        <ol class="list-group">
+            <li class="list-group-item">FSSAI license copy</li>
+            <li class="list-group-item">Regular GSTIN(if applicable)</li>
+            <li class="list-group-item">Your restaurant menu</li>
+            <li class="list-group-item">PAN card copy </li>
+            <li class="list-group-item">Bank account details</li>
+            <li class="list-group-item">Dish images for 5 items</li>
+          </ol>
+      </div>  
+      <!-- Login Modal -->
+<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="LoginModalLabel">Login to repEat</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

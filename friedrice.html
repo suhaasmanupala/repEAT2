@@ -1,0 +1,138 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Pizza</title>
+    <link rel="stylesheet" href="/friedrice.css">
+    <link rel="icon" href="/friedrice/redArice.jpg" type="image/x-icon">
+
+</head>
+
+<body>
+    <input type="checkbox" id="cart">
+    <label for="cart" class="label-cart"><span class="fas fa-shopping-cart"></span></label>
+    <h3 class="logo">Food delivery services</h3>
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-menu">
+            <span class="fas fa-search"></span>
+            <a href="#">Search</a>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-home"></span>
+            <a href="#">Home</a>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-heart"></span>
+            <a href="#">Favs</a>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-user"></span>
+            <a href="#">Profile</a>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-sliders-h"></span>
+            <a href="#">setting</a>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="slides">
+            <img src="/pizza/pizzachi.webp">
+        </div>
+        <div class="slides">
+            <img src="/pizza/pizzameat.webp">
+        </div>
+        <div class="slides">
+            <img src="/pizza/pizzahawa.webp">
+        </div>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("slides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 4000);
+            }
+        </script>
+            
+    </div>
+    <div class="dashboard-content">
+        <div class="dashboard-card">
+            <img src="/friedrice/chifrice.jpg"></a>
+            <div class="card-detail">
+                <h2>Chicken Fried rice<span>₹89</span></h2>
+                <p>Best deals on biryani</p>
+                <p class="card-title"><span class="fas fa-clock"></span>15-30 min</p>
+            </div>
+
+        </div>
+        <div class="dashboard-card">
+            <img src="/friedrice/mushfriedrice.jpg">
+            <div class="card-detail">
+                <h2>Mushroom and Pine Nut Fried Brown Rice<span>₹120</span></h2>
+                <p>Get exclusive offers</p>
+                <p class="card-title"><span class="fas fa-clock"></span>15-30 min</p>
+            </div>
+
+        </div>
+        <div class="dashboard-card">
+            <img src="/friedrice/porkfriedrice.jpg">
+            <div class="card-detail">
+                <h2>Edamame and Pork Fried Rice<span>₹160</span></h2>
+                <p>Special taste on your deals</p>
+                <p class="card-title"><span class="fas fa-clock"></span>15-30 min</p>
+            </div>
+
+        </div>
+        <div class="dashboard-card">
+            <img src="/friedrice/redArice.jpg">
+            <div class="card-detail">
+                <h2>Red Pepper, Almond and Fried Brown rice<span>₹30</span></h2>
+                <p>LOrem ipsum dolor sit</p>
+                <p class="card-title"><span class="fas fa-clock"></span>15-30 min</p>
+            </div>
+
+        </div>
+        <div class="dashboard-card">
+            <img src="/friedrice/walnut friedrice.jpg">
+            <div class="card-detail">
+                <h2>Zucchini and Walnut Fried Brown RIce<span>₹30</span></h2>
+                <p>LOrem ipsum dolor sit</p>
+                <p class="card-title"><span class="fas fa-clock"></span>15-30 min</p>
+            </div>
+
+        </div>
+        <div class="dashboard-card">
+            <img src="/friedrice/friedbro.jpg">
+            <div class="card-detail">
+                <h2>Broccoli and Chicken Stir-Fried Rice<span>₹30</span></h2>
+                <p>LOrem ipsum dolor sit</p>
+                <p class="card-title"><span class="fas fa-clock"></span>15-30 min</p>
+            </div>
+
+        </div>
+
+</body>
+
+</html>
